@@ -48,5 +48,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "pradeep-setup-repo-82"
-          entrypoint: "src/server.js"
+          entrypoint: "src/server.ts"
           root: "."
