@@ -40,4 +40,7 @@ jobs:
         run: deno lint
 
       - name: Run tests
-        run: deno test -A
+        run: deno test -A --coverage 
+
+      - name: Run Coverage
+        run: deno coverage --html
