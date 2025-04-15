@@ -44,3 +44,9 @@ jobs:
 
       - name: Run Coverage
         run: deno coverage
+      - name: Upload to Deno Deploy
+        uses: denoland/deployctl@v1
+        with:
+          project: "pradeep-setup-repo-82"
+          entrypoint: "src/server.js"
+          root: "."
